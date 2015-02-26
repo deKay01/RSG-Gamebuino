@@ -1,7 +1,15 @@
+// RSG
+// v1.01
+// deKay - @deKay01 andyk@lofi-gaming.org.uk
+
+// Very simple, terrible RPG
+
 #include <SPI.h>
 #include <Gamebuino.h>
 
 Gamebuino gb;
+
+const char version[] = "1.01";
 
 extern const byte font3x3[]; //a really tiny font
 extern const byte font3x5[]; //a small but efficient font (default)
@@ -109,6 +117,7 @@ void keyPressed() {
     break;
   case INSTRUCTIONS:
     if(gb.buttons.pressed(BTN_A)){
+      initgame();
       gamestate = TITLES;      
     };
     break;

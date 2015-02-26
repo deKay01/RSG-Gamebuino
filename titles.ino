@@ -8,7 +8,8 @@ void titlescreen() {
 //gb.display.print(F("123456789012345678901\n"));
   gb.display.print(F("       \25 Start\n"));
   gb.display.print(F("   \26 Instructions\n\n"));
-  gb.display.print(F("   (c)2015 deKay"));
+  gb.display.print(F(" (c)2015 deKay, v"));
+  gb.display.print(version);
 }
 
 void instructions(){
